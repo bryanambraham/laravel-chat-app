@@ -27,19 +27,19 @@ Echo.private(`messenger.1.2`)
     });
 
 
-// Echo.join(`group_chat.1`)
-//     .here((users) => {
-//         console.log(users);
-//     })
-//     .joining((user) => {
-//         console.log(user.name);
-//     })
-//     .leaving((user) => {
-//         console.log(user.name);
-//     })
-//     .listen('GroupChatMessage', (e) => {
-//         console.log(e);
-//     })
-//     .error((error) => {
-//         console.error(error);
-//     });
+Echo.join(`group_chat.1`)
+    .here((users) => {
+        console.log(users);
+    })
+    .joining((user) => {
+        console.log(user.name);
+    })
+    .leaving((user) => {
+        console.log(user.name);
+    })
+    .listen('GroupChatMessage', (e) => {
+        console.log(e);
+    })
+    .error((error) => {
+        console.error(error);
+    });
